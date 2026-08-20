@@ -6,13 +6,13 @@ from fastapi import (
 
 from sqlalchemy.orm import Session
 
-from database.connection import get_db
+from app.database.connection import get_db
 
-from models.order import Order
-from models.order_item import OrderItem
-from models.menu_item import MenuItem
+from app.models.order import Order
+from app.models.order_item import OrderItem
+from app.models.menu_item import MenuItem
 
-from schemas.order import (
+from app.schemas.order import (
     OrderCreate,
     OrderResponse
 )

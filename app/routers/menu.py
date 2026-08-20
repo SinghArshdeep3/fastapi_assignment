@@ -6,9 +6,9 @@ from fastapi import (
 
 from sqlalchemy.orm import Session
 
-from database.connection import get_db
-from models.menu_item import MenuItem
-from schemas.menu_item import (
+from app.database.connection import get_db
+from app.models.menu_item import MenuItem
+from app.schemas.menu_item import (
     MenuItemCreate,
     MenuItemResponse
 )
